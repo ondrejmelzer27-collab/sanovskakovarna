@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurace Šanovská Kovárna · Teplice</title>
+  <meta name="description" content="Česká hospoda pod Doubravkou v Teplicích. Na čepu Bakalář a Pilsner Urquell, česká kuchyně, zahrádka. Otevřeno denně 15:00–23:00. Rezervace na 777 222 484.">
+  <meta name="theme-color" content="#1b1a18">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Restaurace Šanovská Kovárna",
+    "servesCuisine": "Česká kuchyně",
+    "telephone": "+420777222484",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pod Doubravkou 1337/12",
+      "postalCode": "415 01",
+      "addressLocality": "Teplice",
+      "addressCountry": "CZ"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "15:00",
+      "closes": "23:00"
+    }],
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- The horseshoe from the sign's "U": the page's one motif -->
+      <symbol id="podkova" viewBox="0 0 200 212">
+        <path fill="currentColor" d="M18 22h46c-6 34-8 70 1 98 7 22 20 34 35 34s28-12 35-34c9-28 7-64 1-98h46c8 44 10 92-6 130-16 38-44 58-76 58S40 190 24 152C8 114 10 66 18 22Z"/>
+        <g fill="var(--hole, #1b1a18)">
+          <rect x="30" y="50" width="9" height="16" rx="3"/>
+          <rect x="31" y="88" width="9" height="16" rx="3"/>
+          <rect x="38" y="126" width="9" height="16" rx="3" transform="rotate(-14 42 134)"/>
+          <rect x="56" y="160" width="9" height="16" rx="3" transform="rotate(-38 60 168)"/>
+          <rect x="161" y="50" width="9" height="16" rx="3"/>
+          <rect x="160" y="88" width="9" height="16" rx="3"/>
+          <rect x="153" y="126" width="9" height="16" rx="3" transform="rotate(14 158 134)"/>
+          <rect x="135" y="160" width="9" height="16" rx="3" transform="rotate(38 140 168)"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="bar">
+    <div class="bar__in">
+      <a class="mark" href="#top" aria-label="Šanovská kovárna, na začátek stránky">
+        <span class="mark__name">Šanovská kovárna</span>
+      </a>
+      <button class="bar__toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Hlavní navigace">
+        <a href="#pivo">Pivo</a>
+        <a href="#kuchyne">Kuchyně</a>
+        <a href="#hospoda">Hospoda</a>
+        <a href="#rezervace">Rezervace</a>
+        <a href="#najdete">Kde nás najdete</a>
+      </nav>
+      <a class="btn btn--small" href="tel:+420777222484">Zavolat</a>
+    </div>
+  </header>
+
+  <main id="obsah">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <h1 id="hero-title" class="hero__title">
+          <span class="line"><span>Šanovská</span></span>
+          <span class="line"><span>kovárna</span></span>
+        </h1>
+        <p class="restaurace" aria-label="Restaurace">
+          <span aria-hidden="true">Resta</span><svg class="restaurace__u" aria-hidden="true" focusable="false"><use href="#podkova"/></svg><span aria-hidden="true">race</span>
+        </p>
+        <p class="hero__lead">Česká hospoda pod Doubravkou v&nbsp;Teplicích. Na&nbsp;čepu Bakalář a&nbsp;Pilsner Urquell, z&nbsp;kuchyně česká jídla.</p>
+        <p class="status" data-status><span class="status__dot" aria-hidden="true"></span><span data-status-text>Otevřeno denně 15:00–23:00</span></p>
+        <div class="hero__actions">
+          <a class="btn" href="tel:+420777222484">Zamluvit stůl · 777&nbsp;222&nbsp;484</a>
+          <a class="textlink" href="#pivo">Co máme na čepu</a>
+        </div>
+      </div>
+      <div class="hero__shoe" aria-hidden="true">
+        <div class="hero__shoe-drift">
+          <svg class="shoe shoe--iron"><use href="#podkova"/></svg>
+          <svg class="shoe shoe--hot"><use href="#podkova"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIVO -->
+    <section class="pivo" id="pivo" aria-labelledby="pivo-title">
+      <div class="pivo__in">
+        <div class="pivo__head">
+          <h2 id="pivo-title" class="h2 rv">Na čepu Bakalář</h2>
+          <p class="pivo__lead rv">Pět piv z&nbsp;rakovnického pivovaru Bakalář a&nbsp;k&nbsp;nim plzeňský Pilsner Urquell.</p>
+        </div>
+
+        <figure class="glass rv" aria-labelledby="glass-caption">
+          <svg class="glass__svg" viewBox="0 0 260 330" role="img" aria-label="Půllitr s vybraným pivem">
+            <defs>
+              <clipPath id="glass-inside"><rect x="46" y="46" width="138" height="250" rx="10"/></clipPath>
+            </defs>
+            <!-- handle -->
+            <path d="M190 92h22c18 0 28 12 28 30v86c0 18-10 30-28 30h-22" fill="none" stroke="currentColor" stroke-width="14"/>
+            <g clip-path="url(#glass-inside)">
+              <rect x="46" y="46" width="138" height="250" fill="var(--glass-empty)"/>
+              <g class="glass__beer" data-pour>
+                <g class="beer" data-beer="11"><rect x="46" y="86" width="138" height="210" fill="#efb02a"/></g>
+                <g class="beer" data-beer="12"><rect x="46" y="86" width="138" height="210" fill="#e3951a"/></g>
+                <g class="beer" data-beer="12t"><rect x="46" y="86" width="138" height="210" fill="#3a1b0d"/></g>
+                <g class="beer" data-beer="12r"><rect x="46" y="190" width="138" height="106" fill="#e3951a"/><rect x="46" y="86" width="138" height="108" fill="#3a1b0d"/></g>
+                <g class="beer" data-beer="13m"><rect x="46" y="86" width="138" height="210" fill="#cf7a16"/></g>
+                <g class="beer" data-beer="pu"><rect x="46" y="86" width="138" height="210" fill="#e9a522"/></g>
+                <rect class="glass__foam" x="46" y="56" width="138" height="36" fill="#f6efdf"/>
+              </g>
+              <!-- dimples of the mug -->
+              <g fill="#fff" opacity=".13">
+                <rect x="60" y="112" width="26" height="34" rx="13"/><rect x="102" y="112" width="26" height="34" rx="13"/><rect x="144" y="112" width="26" height="34" rx="13"/>
+                <rect x="60" y="164" width="26" height="34" rx="13"/><rect x="102" y="164" width="26" height="34" rx="13"/><rect x="144" y="164" width="26" height="34" rx="13"/>
+                <rect x="60" y="216" width="26" height="34" rx="13"/><rect x="102" y="216" width="26" height="34" rx="13"/><rect x="144" y="216" width="26" height="34" rx="13"/>
+              </g>
+            </g>
+            <rect x="40" y="40" width="150" height="262" rx="14" fill="none" stroke="currentColor" stroke-width="12"/>
+          </svg>
+          <figcaption id="glass-caption" class="glass__cap" aria-live="polite">Bakalář 12° · světlý ležák</figcaption>
+        </figure>
+
+        <ul class="taps" aria-label="Piva na čepu">
+          <li class="rv"><button class="tap" type="button" data-pick="11" aria-pressed="false">
+            <span class="tap__name">Bakalář 11°</span><span class="tap__kind">Světlé pivo</span>
+            <span class="tap__price">0,5&nbsp;l <span class="ph">[CENA]</span>&nbsp;Kč</span></button></li>
+          <li class="rv"><button class="tap" type="button" data-pick="12" aria-pressed="true">
+            <span class="tap__name">Bakalář 12°</span><span class="tap__kind">Světlý ležák</span>
+            <span class="tap__price">0,5&nbsp;l <span class="ph">[CENA]</span>&nbsp;Kč</span></button></li>
+          <li class="rv"><button class="tap" type="button" data-pick="12t" aria-pressed="false">
+            <span class="tap__name">Bakalář 12° tmavý</span><span class="tap__kind">Tmavý ležák</span>
+            <span class="tap__price">0,5&nbsp;l <span class="ph">[CENA]</span>&nbsp;Kč</span></button></li>
+          <li class="rv"><button class="tap" type="button" data-pick="12r" aria-pressed="false">
+            <span class="tap__name">Bakalář 12° řezaný</span><span class="tap__kind">Světlé a&nbsp;tmavé v&nbsp;jednom půllitru</span>
+            <span class="tap__price">0,5&nbsp;l <span class="ph">[CENA]</span>&nbsp;Kč</span></button></li>
+          <li class="rv"><button class="tap" type="button" data-pick="13m" aria-pressed="false">
+            <span class="tap__name">Bakalář 13° medový</span><span class="tap__kind">Světlý speciál ochucený medem</span>
+            <span class="tap__price">0,5&nbsp;l <span class="ph">[CENA]</span>&nbsp;Kč</span></button></li>
+          <li class="rv"><button class="tap" type="button" data-pick="pu" aria-pressed="false">
+            <span class="tap__name">Pilsner Urquell 12°</span><span class="tap__kind">Světlý ležák z&nbsp;Plzně</span>
+            <span class="tap__price">0,5&nbsp;l <span class="ph">[CENA]</span>&nbsp;Kč</span></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KUCHYNE -->
+    <section class="kuchyne" id="kuchyne" aria-labelledby="kuchyne-title">
+      <div class="kuchyne__head">
+        <h2 id="kuchyne-title" class="h2 rv">Česká kuchyně</h2>
+        <p class="kuchyne__lead rv">Najíte se u&nbsp;nás, jídlo si můžete vzít s&nbsp;sebou, nebo si ho nechat přivézt. <span class="ph">[Jak objednat donášku – doplnit]</span></p>
+      </div>
+
+      <div class="menu">
+        <div class="menu__cat">
+          <h3 class="menu__title rv">Polévky</h3>
+          <ul class="menu__list">
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+          </ul>
+        </div>
+        <div class="menu__cat">
+          <h3 class="menu__title rv">Hlavní jídla</h3>
+          <ul class="menu__list">
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+          </ul>
+        </div>
+        <div class="menu__cat">
+          <h3 class="menu__title rv">K&nbsp;pivu</h3>
+          <ul class="menu__list">
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+            <li class="dish rv"><svg class="dish__shoe" aria-hidden="true"><use href="#podkova"/></svg><div><p class="dish__row"><span class="dish__name ph">[Název jídla]</span><span class="dish__price"><span class="ph">[CENA]</span>&nbsp;Kč</span></p><p class="dish__desc ph">[Gramáž, krátký popis]</p></div></li>
+          </ul>
+        </div>
+      </div>
+      <p class="kuchyne__note rv">Alergeny: <span class="ph">[seznam alergenů – doplnit]</span></p>
+    </section>
+
+    <!-- BAND: the motif, full width -->
+    <div class="band marquee" aria-hidden="true">
+      <div class="band__track">
+        <span>Bakalář</span><svg><use href="#podkova"/></svg><span>Pilsner Urquell</span><svg><use href="#podkova"/></svg><span>Česká kuchyně</span><svg><use href="#podkova"/></svg><span>Denně 15–23</span><svg><use href="#podkova"/></svg><span>Pod Doubravkou 12</span><svg><use href="#podkova"/></svg>
+        <span>Bakalář</span><svg><use href="#podkova"/></svg><span>Pilsner Urquell</span><svg><use href="#podkova"/></svg><span>Česká kuchyně</span><svg><use href="#podkova"/></svg><span>Denně 15–23</span><svg><use href="#podkova"/></svg><span>Pod Doubravkou 12</span><svg><use href="#podkova"/></svg>
+      </div>
+    </div>
+
+    <!-- HOSPODA -->
+    <section class="hospoda" id="hospoda" aria-labelledby="hospoda-title">
+      <div class="hospoda__panel">
+        <div class="hospoda__left">
+          <h2 id="hospoda-title" class="h2 rv">Pod nápisem s&nbsp;podkovou</h2>
+          <figure class="arch rv">
+            <svg viewBox="0 0 400 480" role="img" aria-label="Kresba: obloukové okno s olověným zasklením a lucerna na žluté fasádě">
+              <defs>
+                <pattern id="lead" width="30" height="40" patternUnits="userSpaceOnUse" patternTransform="translate(5 0)">
+                  <path d="M15 0 30 20 15 40 0 20Z" fill="none" stroke="#1b1a18" stroke-width="3.5"/>
+                </pattern>
+                <clipPath id="arch-window"><path d="M70 480V200c0-74 58-122 130-122s130 48 130 122v280Z"/></clipPath>
+              </defs>
+              <rect width="400" height="480" fill="#e0bd6a"/>
+              <!-- rough facade panels -->
+              <rect x="0" y="0" width="400" height="40" fill="#d4ab52"/>
+              <path d="M50 480V196c0-88 68-140 150-140s150 52 150 140v284Z" fill="#c99a40"/>
+              <g clip-path="url(#arch-window)">
+                <rect width="400" height="480" fill="#f4b54a"/>
+                <rect y="300" width="400" height="180" fill="#ff8a3a"/>
+                <rect width="400" height="480" fill="url(#lead)"/>
+              </g>
+              <path d="M70 480V200c0-74 58-122 130-122s130 48 130 122v280" fill="none" stroke="#1b1a18" stroke-width="12"/>
+              <rect x="194" y="78" width="12" height="402" fill="#1b1a18"/>
+              <rect x="70" y="268" width="260" height="12" fill="#1b1a18"/>
+              <!-- lantern on its bracket -->
+              <path d="M8 150h34v-14" fill="none" stroke="#1b1a18" stroke-width="7"/>
+              <path d="M28 160h28l-4 54H32Z" fill="#ffd27a"/>
+              <path d="M24 156h36l-6-14H30Z" fill="#1b1a18"/>
+              <rect x="28" y="212" width="28" height="7" fill="#1b1a18"/>
+            </svg>
+          </figure>
+        </div>
+        <div class="hospoda__right">
+          <div class="rv">
+            <h3 class="h3">Zahrádka</h3>
+            <p>Před vchodem stojí masivní dřevěné stoly a&nbsp;lavice pod slunečníky. Když je hezky, sedí se venku u&nbsp;ulice Pod Doubravkou.</p>
+          </div>
+          <div class="rv">
+            <h3 class="h3">Uvnitř</h3>
+            <p>Kamenné zdi, tmavé dřevo a&nbsp;oblouková okna s&nbsp;olověným zasklením. Nad vchodem je černý kovový nápis, v&nbsp;němž podkova nahrazuje písmeno&nbsp;U.</p>
+          </div>
+          <a class="btn rv" href="#najdete">Kudy k&nbsp;nám</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REZERVACE -->
+    <section class="rezervace" id="rezervace" aria-labelledby="rezervace-title">
+      <div class="tiles">
+        <div class="tile tile--oak" aria-hidden="true"></div>
+        <div class="tile tile--main rv">
+          <div class="tile__text">
+            <h2 id="rezervace-title" class="tile__title">Stůl zamluvíte po telefonu</h2>
+            <p>Volejte denně mezi 15. a&nbsp;23. hodinou. Řekněte nám, kolik vás bude a&nbsp;kdy dorazíte.</p>
+          </div>
+          <div class="tile__call">
+            <a class="tile__tel" href="tel:+420777222484">777&nbsp;222&nbsp;484</a>
+            <a class="btn btn--dark" href="tel:+420777222484">Zavolat a&nbsp;rezervovat</a>
+            <a class="tile__online" href="#"><span class="ph">[Odkaz na online rezervaci – pokud bude]</span></a>
+          </div>
+        </div>
+        <div class="tile tile--shoes" aria-hidden="true">
+          <svg><use href="#podkova"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- KDE NAS NAJDETE -->
+    <section class="najdete" id="najdete" aria-labelledby="najdete-title">
+      <div class="coupon rv">
+        <div class="coupon__left">
+          <h2 id="najdete-title" class="coupon__title">Kde nás najdete</h2>
+          <address class="coupon__addr">
+            Restaurace Šanovská Kovárna<br>
+            Pod Doubravkou 1337/12<br>
+            415&nbsp;01 Teplice
+          </address>
+          <a class="textlink textlink--dark" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurace%20%C5%A0anovsk%C3%A1%20Kov%C3%A1rna%2C%20Pod%20Doubravkou%201337%2F12%2C%20415%2001%20Teplice" target="_blank" rel="noopener">Otevřít v&nbsp;Google Mapách</a>
+        </div>
+        <div class="coupon__right">
+          <table class="hours">
+            <caption>Otevírací doba</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Pondělí</th><td>15:00–23:00</td></tr>
+              <tr data-day="2"><th scope="row">Úterý</th><td>15:00–23:00</td></tr>
+              <tr data-day="3"><th scope="row">Středa</th><td>15:00–23:00</td></tr>
+              <tr data-day="4"><th scope="row">Čtvrtek</th><td>15:00–23:00</td></tr>
+              <tr data-day="5"><th scope="row">Pátek</th><td>15:00–23:00</td></tr>
+              <tr data-day="6"><th scope="row">Sobota</th><td>15:00–23:00</td></tr>
+              <tr data-day="0"><th scope="row">Neděle</th><td>15:00–23:00</td></tr>
+            </tbody>
+          </table>
+          <p class="coupon__tel">Telefon <a href="tel:+420777222484">777&nbsp;222&nbsp;484</a></p>
+        </div>
+      </div>
+      <div class="map rv">
+        <iframe title="Mapa: Pod Doubravkou 1337/12, Teplice" src="https://www.google.com/maps?q=Pod%20Doubravkou%201337%2F12%2C%20415%2001%20Teplice&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="foot__mark" aria-hidden="true">Šanovská kovárna</p>
+    <div class="foot__cols">
+      <nav class="foot__nav" aria-label="Patička">
+        <a href="#pivo">Pivo</a>
+        <a href="#kuchyne">Kuchyně</a>
+        <a href="#hospoda">Hospoda</a>
+        <a href="#rezervace">Rezervace</a>
+        <a href="#najdete">Kde nás najdete</a>
+      </nav>
+      <p>Pod Doubravkou 1337/12<br>415&nbsp;01 Teplice</p>
+      <p>Denně 15:00–23:00<br><a href="tel:+420777222484">777&nbsp;222&nbsp;484</a></p>
+    </div>
+    <div class="foot__last">
+      <p>© 2026 Restaurace Šanovská Kovárna</p>
+      <a class="btn btn--small btn--dark" href="#top">Nahoru</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
